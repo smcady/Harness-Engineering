@@ -1,18 +1,7 @@
 ---
 name: scaffold-project
-description: |
-  Initialize a new project with standard engineering structure: docs/ directory,
-  table-of-contents CLAUDE.md, architecture doc, exec plans, design decisions,
-  tech debt tracker, and .claude/rules for testing and quality conventions.
-  Safe to run on existing projects — never overwrites existing files.
-allowed-tools:
-  - Read
-  - Write
-  - Edit
-  - Bash
-  - Glob
-  - Grep
-  - AskUserQuestion
+description: "Initialize a new project with standard engineering structure: docs/ directory, table-of-contents CLAUDE.md, architecture doc, exec plans, design decisions, tech debt tracker, and .claude/rules for testing and quality conventions. Safe to run on existing projects — never overwrites existing files."
+user-invokable: true
 ---
 
 # Scaffold Project
@@ -127,7 +116,7 @@ These rules apply automatically. Do not wait to be asked.
 
 Create a **short** table-of-contents style CLAUDE.md. Tailor the Commands section to the detected language/framework. Template:
 
-```markdown
+````markdown
 # CLAUDE.md
 
 ## Commands
@@ -149,7 +138,7 @@ See [docs/architecture.md](docs/architecture.md) for full details.
 ## Known Gotchas
 
 - [Fill in as gotchas are discovered]
-```
+````
 
 Keep this file under 80 lines. When a section grows, extract to `docs/` and leave a pointer.
 
